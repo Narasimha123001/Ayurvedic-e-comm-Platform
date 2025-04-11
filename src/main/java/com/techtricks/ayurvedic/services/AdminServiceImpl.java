@@ -23,6 +23,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public Optional<Admin> authenticate(String email, String password) {
+
         Optional<Admin> optionalAdmin = adminRepository.findByEmail(email);
         if (optionalAdmin.isPresent() && passwordEncoder.matches(password, optionalAdmin.get().getPassword())) {
             return optionalAdmin;

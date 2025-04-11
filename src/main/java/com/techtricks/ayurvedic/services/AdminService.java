@@ -12,5 +12,6 @@ public interface AdminService {
 
     public Optional<Admin> authenticate(String email, String password);
 
+
     public Admin saveAdmin(Admin admin) throws AdminAlreadyExistsExceptions;
 }
