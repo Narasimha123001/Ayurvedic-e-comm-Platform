@@ -5,7 +5,6 @@ import com.techtricks.ayurvedic.models.Product;
 import com.techtricks.ayurvedic.repositories.ProductRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
